@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 300px;
+  height: 400px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(img/christmas-tree.jpeg);
+  background-size: cover;
+  background-position: top;
+  backface-visibility: hidden;
+}
+
+.snow-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.snow {
+  width: 20px;
+  margin-right: 10px;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.snow img {
+  width: 100%;
+}
+
+.snowflake {
+  backface-visibility: hidden;
+  animation-timing-function: ease-in-out;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+.snowflake-2,
+.snowflake-7 {
+  animation-name: snow;
+}
+.snowflake-4,
+.snowflake-9 {
+  animation-delay: 1s;
+  animation-name: snow;
+}
+
+.snowflake-1,
+.snowflake-6 {
+  animation-delay: 2s;
+  animation-name: snow;
+}
+.snowflake-3,
+.snowflake-8 {
+  animation-delay: 3s;
+  animation-name: snow;
+}
+
+.snowflake-5,
+.snowflake-10 {
+  animation-delay: 4s;
+  animation-name: snow;
+}
+.snowflake-12,
+.snowflake-17 {
+  animation-delay: 5s;
+  animation-name: snow;
+}
+.snowflake-14,
+.snowflake-19 {
+  animation-delay: 6s;
+  animation-name: snow;
+}
+.snowflake-11,
+.snowflake-16 {
+  animation-delay: 7s;
+  animation-name: snow;
+}
+.snowflake-13,
+.snowflake-18 {
+  animation-delay: 8s;
+  animation-name: snow;
+}
+.snowflake-15,
+.snowflake-20 {
+  animation-delay: 9s;
+  animation-name: snow;
+}
+.snowflake-22,
+.snowflake-27 {
+  animation-delay: 10s;
+  animation-name: snowMore;
+}
+.snowflake-24,
+.snowflake-29 {
+  animation-delay: 11s;
+  animation-name: snowMore;
+}
+.snowflake-21,
+.snowflake-26 {
+  animation-delay: 12s;
+  animation-name: snowMore;
+}
+.snowflake-23,
+.snowflake-28 {
+  animation-delay: 13s;
+  animation-name: snowMore;
+}
+.snowflake-25,
+.snowflake-30 {
+  animation-delay: 14s;
+  animation-name: snowMore;
+}
+.snowflake-32,
+.snowflake-37 {
+  animation-delay: 15s;
+  animation-name: snowMore;
+}
+.snowflake-34,
+.snowflake-39 {
+  animation-delay: 16s;
+  animation-name: snowMore;
+}
+.snowflake-31,
+.snowflake-36 {
+  animation-delay: 17s;
+  animation-name: snowMore;
+}
+.snowflake-33,
+.snowflake-38 {
+  animation-delay: 18s;
+  animation-name: snowMore;
+}
+.snowflake-35,
+.snowflake-40 {
+  animation-delay: 19s;
+  animation-name: snowMore;
+}
+
+@keyframes snow {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(355px);
+  }
+}
+
+@keyframes snowMore {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  100% {
+    opacity: 0.9;
+    transform: translateY(300px);
+  }
+}
